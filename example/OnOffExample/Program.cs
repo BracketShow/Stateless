@@ -1,5 +1,6 @@
 ﻿using System;
 using Stateless;
+using Stateless.Graph;
 
 namespace OnOffExample
 {
@@ -21,6 +22,8 @@ namespace OnOffExample
             // Configure state machine with the Configure method, supplying the state to be configured as a parameter
             onOffSwitch.Configure(off).Permit(space, on);
             onOffSwitch.Configure(on).Permit(space, off);
+
+            Console.WriteLine(UmlDotGraph.Format(onOffSwitch.GetInfo()));
 
             Console.WriteLine("Press <space> to toggle the switch. Any other key will exit the program.");
 

@@ -6,7 +6,7 @@
     <NeutralLanguage>en-US</NeutralLanguage>
     <VersionPrefix>4.2.0</VersionPrefix>
     <Authors>Stateless Contributors</Authors>
-    <TargetFrameworks>netstandard1.0;net45;net40</TargetFrameworks>
+    <TargetFrameworks>netcoreapp3.0;netstandard2.1;netstandard1.0;net45;net40</TargetFrameworks>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <AssemblyName>Stateless</AssemblyName>
